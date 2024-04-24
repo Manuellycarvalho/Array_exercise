@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 2</title>
+  </head>
+  <body>
+    <script>
+      let avaliacao = [10, 7, 8, 10, 4, 5, 7, 9];
+
+      function media() {
+        let nota = 0;
+
+        for (let i in avaliacao) {
+          nota += avaliacao[i];
+        }
+        
+        let media = nota / avaliacao.length;
+        console.log(media);
+      }
+
+      media();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+    <script>
+        var numeros = [1, 4, 3, 2, 6, 7, 8, 9, 12, 64];
+
+        function temPar() {
+            for (let i = 0; i < numeros.length; i++) {
+                if (numeros[i] % 2 === 0) {
+                    console.log('Tem pelo menos um número par');
+                    return;
+                }
+            }
+            console.log('Apenas tem números ímpares');
+        }
+
+        temPar();
+    </script>
+</body>
+</html>

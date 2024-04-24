@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <script>
+        var idade = [15, 21, 4, 32, 65, 43, 25, 54, 80, 53, 20, 98, 2, 10, 18, 23, 16, 37, 40, 14];
+
+
+        function media() {
+            let soma = 0;
+
+            for (let i = 0; i < idade.length; i++) {
+                soma += idade[i];
+            }
+
+            return soma / idade.length;
+        }
+
+       
+        let mediaIdade = media();
+        console.log("Média de idade:", mediaIdade);
+
+        
+        console.log("Idades acima da média:");
+        for (let i = 0; i < idade.length; i++) {
+            if (idade[i] > mediaIdade) {
+                console.log(idade[i]);
+            }
+        }
+    </script>
+</body>
+</html>
